@@ -125,9 +125,9 @@ else:
 
     if comp == 0:
         b = 'rock'
-    elif comp == 1:  # Corrected to check comp instead of player
+    elif comp == 1: 
         b = 'paper'
-    elif comp == 2:  # Corrected to check comp instead of player
+    elif comp == 2:  
         b = 'scissors'
 
     print(f"The computer chose {b} and you chose {a}")
