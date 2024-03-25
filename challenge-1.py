@@ -89,3 +89,55 @@ import random
 # rand= random.randint(0, length-1)
 # print(f'the person to pay the bill is {names_list[rand]}')
 
+# Treasure island
+
+# map=[[" "," "," "],
+#      [" "," "," "],
+#      [" "," "," "]]
+# print("the map is made up of 3x3 blocks, pls enter co-ordinates of the block: ")
+# coords= input()
+# coords.lower()
+# abc=["a","b","c"]
+# alpha=coords[0]
+# a=abc.index(alpha)
+# numeric=int(coords[1])
+# b=numeric-1
+# map[a][b]="X"
+# print(map)
+
+# FINAL DAY 4 PROJECT- rock paper sciccors
+
+import random
+
+player = int(input("Enter 0/1/2 for rock, paper, scissors respectively: "))
+
+if player not in [0, 1, 2]:
+    print("Invalid input")
+else:
+    if player == 0:
+        a = 'rock'
+    elif player == 1:
+        a = 'paper'
+    elif player == 2:
+        a = 'scissors'
+
+    comp = random.randint(0, 2)
+
+    if comp == 0:
+        b = 'rock'
+    elif comp == 1:  # Corrected to check comp instead of player
+        b = 'paper'
+    elif comp == 2:  # Corrected to check comp instead of player
+        b = 'scissors'
+
+    print(f"The computer chose {b} and you chose {a}")
+
+    if comp == player:
+        print("It's a tie")
+    elif (comp == 0 and player == 1) or (comp == 1 and player == 2) or (comp == 2 and player == 0):
+        print("You win")
+    else:
+        print("You lose")
+
+
+
