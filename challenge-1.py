@@ -107,37 +107,69 @@ import random
 
 # FINAL DAY 4 PROJECT- rock paper sciccors
 
-import random
+# import random
 
-player = int(input("Enter 0/1/2 for rock, paper, scissors respectively: "))
+# player = int(input("Enter 0/1/2 for rock, paper, scissors respectively: "))
 
-if player not in [0, 1, 2]:
-    print("Invalid input")
-else:
-    if player == 0:
-        a = 'rock'
-    elif player == 1:
-        a = 'paper'
-    elif player == 2:
-        a = 'scissors'
+# if player not in [0, 1, 2]:
+#     print("Invalid input")
+# else:
+#     if player == 0:
+#         a = 'rock'
+#     elif player == 1:
+#         a = 'paper'
+#     elif player == 2:
+#         a = 'scissors'
 
-    comp = random.randint(0, 2)
+#     comp = random.randint(0, 2)
 
-    if comp == 0:
-        b = 'rock'
-    elif comp == 1:  # Corrected to check comp instead of player
-        b = 'paper'
-    elif comp == 2:  # Corrected to check comp instead of player
-        b = 'scissors'
+#     if comp == 0:
+#         b = 'rock'
+#     elif comp == 1:  # Corrected to check comp instead of player
+#         b = 'paper'
+#     elif comp == 2:  # Corrected to check comp instead of player
+#         b = 'scissors'
 
-    print(f"The computer chose {b} and you chose {a}")
+#     print(f"The computer chose {b} and you chose {a}")
 
-    if comp == player:
-        print("It's a tie")
-    elif (comp == 0 and player == 1) or (comp == 1 and player == 2) or (comp == 2 and player == 0):
-        print("You win")
-    else:
-        print("You lose")
+#     if comp == player:
+#         print("It's a tie")
+#     elif (comp == 0 and player == 1) or (comp == 1 and player == 2) or (comp == 2 and player == 0):
+#         print("You win")
+#     else:
+#         print("You lose")
+
+# DAY 5 PROGRAMS
+
+# average height
+
+# heights= input("enter the heights of the students in your class: ").split()
+# for i in range(0, len(heights)):
+#     heights[i]=int(heights[i])
+# count=0
+# sum=0
+# for j in heights:
+#     sum += j
+#     count+=1
+# avg=round(sum/count)
+# print(sum)
+# print(avg)
+
+# high score
+
+# score= input("enter the scores of students: ").split()
+# for i in range(0, len(score)):
+#     score[i]= int(score[i])
+# print(score)
+
+# hscore=0
+# for i in score:
+#     if i > hscore:
+#         hscore=i
+
+# print(hscore)
+
+# the fizzbuzz game
 
 
 
