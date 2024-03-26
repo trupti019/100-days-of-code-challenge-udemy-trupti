@@ -157,17 +157,17 @@ import random
 
 # high score
 
-# score= input("enter the scores of students: ").split()
-# for i in range(0, len(score)):
-#     score[i]= int(score[i])
-# print(score)
+score= input("enter the scores of students: ").split()
+for i in range(0, len(score)):
+    score[i]= int(score[i])
+print(score)
 
-# hscore=0
-# for i in score:
-#     if i > hscore:
-#         hscore=i
+hscore=0
+for i in score:
+    if i > hscore:
+        hscore=i
 
-# print(hscore)
+print(hscore)
 
 # the fizzbuzz game
 
