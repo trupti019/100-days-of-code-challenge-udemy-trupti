@@ -123,7 +123,6 @@ import random
 
 #     comp = random.randint(0, 2)
 
-
 #     if comp == 0:
 #         b = 'rock'
 #     elif comp == 1:  # Corrected to check comp instead of player
