@@ -165,19 +165,70 @@ import random
 
 # high score
 
-score= input("enter the scores of students: ").split()
-for i in range(0, len(score)):
-    score[i]= int(score[i])
-print(score)
+# score= input("enter the scores of students: ").split()
+# for i in range(0, len(score)):
+#     score[i]= int(score[i])
+# print(score)
 
-hscore=0
-for i in score:
-    if i > hscore:
-        hscore=i
+# hscore=0
+# for i in score:
+#     if i > hscore:
+#         hscore=i
 
-print(hscore)
+# print(hscore)
 
 # the fizzbuzz game
+
+# for i in range(0,101):
+#     if i%3==0 and i%5==0:
+#         print('fizzbuzz')    
+#     elif i%3==0:
+#         print('fizz')
+#     elif i%5==0:
+#         print('buzz')
+#     else:
+#         print(i)
+
+# PyPassword generator
+
+# easy level
+
+# letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+# numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+# symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+# password=[]
+
+# nletters=int(input('enter how many letters do you want: '))
+# nnum=int(input('how many numbers: '))
+# nsymbols=int(input('how many symbols: '))
+
+# for i in range(0,nletters):
+#     password+=random.choice(letters)
+
+
+# for i in range(0,nnum):
+#     password+=random.choice(numbers)
+
+# for i in range(0,nsymbols):
+#     password+=random.choice(symbols)
+
+# print(password)
+# random.shuffle(password)
+# print(password)
+
+# realpw=''
+# for i in password:
+#     realpw+=i
+
+# print(realpw)
+
+# day 6- code blocks/ identations/ functions/ while loops
+
+
+
+
+
+
 
 
 
