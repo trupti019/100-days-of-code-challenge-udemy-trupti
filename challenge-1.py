@@ -123,21 +123,19 @@ import random
 
 #     comp = random.randint(0, 2)
 
-<<<<<<< HEAD
 #     if comp == 0:
 #         b = 'rock'
 #     elif comp == 1:  # Corrected to check comp instead of player
 #         b = 'paper'
 #     elif comp == 2:  # Corrected to check comp instead of player
 #         b = 'scissors'
-=======
+
     if comp == 0:
         b = 'rock'
     elif comp == 1: 
         b = 'paper'
     elif comp == 2:  
         b = 'scissors'
->>>>>>> ed6504b018b4a80cd1bdbb5fd1328b3f5dc32198
 
 #     print(f"The computer chose {b} and you chose {a}")
 
