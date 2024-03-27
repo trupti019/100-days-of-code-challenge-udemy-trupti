@@ -224,11 +224,108 @@ import random
 
 # day 6- code blocks/ identations/ functions/ while loops
 
+# day 7- gang man
+
+word_list = [
+    "apple", "banana", "orange", "grape", "kiwi", "strawberry",
+    "watermelon", "pineapple", "blueberry", "raspberry", "peach",
+    "apricot", "pear", "cherry", "mango", "lemon", "lime",
+    "coconut", "papaya", "fig", "plum", "melon", "nectarine",
+    "cranberry", "blackberry", "dragonfruit", "guava", "lychee",
+    "passionfruit", "persimmon", "pomegranate", "tangerine", "mulberry"
+]
+
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+______________
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+______________
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+______________
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+______________''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
+
+endgame=False                                #if end game is true the game is over
+fruit = random.choice(word_list)             #choose a random word from the list for the user to guess
+len=len(fruit)                               #number of characters in random fruit name
+
+lives=6                                      #keep a track of lives left
+print(fruit)                                 #for testing the code
+
+display=[]                                  #create a empty list
+i=0                         
+while i<len:
+   display.append('_')                     #inserting a blank in the empth display list for every letter in random fruit
+   i+=1
+    
+print(display)
 
 
 
+while not endgame:
+   guess=(input("enter a letter: ")).lower()
+   for i in range(0,len(fruit)):
+       if guess==fruit[i]:
+           display[i]=guess
+   if guess not in fruit:
+       lives-=1
+       if lives==0:
+          endgame=True
+          print('you lose lmaooooo')
+          
+           
+   print(f"{.join.display}")
+
+   if '_' not in display:
+     endgame=True
+     print('you win!!! NIGGA')
 
 
-
-
-
+print(stages[lives])
