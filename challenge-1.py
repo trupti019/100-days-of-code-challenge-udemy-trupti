@@ -364,32 +364,32 @@ import random
 
 # final day 8 project
 
-import string
+# import string
 
-alphabets= list(string.ascii_lowercase)
+# alphabets= list(string.ascii_lowercase)
 
-c_or_d=input('\n type code to enrypt and decode to decrypt----->')
-text= input('enter your message-----> ')
-shift= int(input('enter the shift number----->'))
+# c_or_d=input('\n type code to enrypt and decode to decrypt----->')
+# text= input('enter your message-----> ')
+# shift= int(input('enter the shift number----->'))
 
-def encrypt(plain_text, shift_amount):
-  cipher_text=''
-  for i in plain_text:
-    # shifted_index=(alphabets.index(i)+shift_amount)
-    cipher_text += alphabets[(alphabets.index(i)+shift_amount)%26]
-  print(f'the cipher text is {cipher_text}')
+# def encrypt(plain_text, shift_amount):
+#   cipher_text=''
+#   for i in plain_text:
+#     # shifted_index=(alphabets.index(i)+shift_amount)
+#     cipher_text += alphabets[(alphabets.index(i)+shift_amount)%26]
+#   print(f'the cipher text is {cipher_text}')
 
-def decrypt(cipher_text, shift_amount):
-  normal_text=''
-  for i in cipher_text:
-    normal_text+= alphabets[(alphabets.index(i)-shift_amount)%26]
-  print(f'the decrypted text is {normal_text}')
+# def decrypt(cipher_text, shift_amount):
+#   normal_text=''
+#   for i in cipher_text:
+#     normal_text+= alphabets[(alphabets.index(i)-shift_amount)%26]
+#   print(f'the decrypted text is {normal_text}')
 
 
-if c_or_d== 'encrypt':
-  encrypt(plain_text=text, shift_amount=shift)
-elif c_or_d=='decrypt':
-  decrypt(cipher_text=text, shift_amount=shift)
+# if c_or_d== 'encrypt':
+#   encrypt(plain_text=text, shift_amount=shift)
+# elif c_or_d=='decrypt':
+#   decrypt(cipher_text=text, shift_amount=shift)
 
 
 
