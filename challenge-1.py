@@ -335,3 +335,88 @@ import random
 
 # day 8 caesar cipher
 
+# positional arguments
+# interactive  exercise
+# import math
+# def paint(height, width,coverage):
+#     no_of_cans= f'you  will need {math.ceil((height*width)/coverage)} cans to pain the wall'
+#     return no_of_cans
+
+# h=int(input('enter height'))
+# w=int(input('enter width'))
+# cover=5
+
+# print(paint(height=h, width=w, coverage=cover))
+
+# prime number
+
+# def prime(num):
+#     if num==0 or num==1:
+#         return 'not prime'
+#     else:
+#         for i in range(2,num):
+#             if num%i==0:
+#                 return (f'{num} is not a prime number')
+#         print(f'{num} is a prime number')
+
+# inp=int(input('enter a number'))
+# print(prime(inp))
+
+# final day 8 project
+
+import string
+
+alphabets= list(string.ascii_lowercase)
+
+c_or_d=input('\n type code to enrypt and decode to decrypt----->')
+text= input('enter your message-----> ')
+shift= int(input('enter the shift number----->'))
+
+def encrypt(plain_text, shift_amount):
+  cipher_text=''
+  for i in plain_text:
+    # shifted_index=(alphabets.index(i)+shift_amount)
+    cipher_text += alphabets[(alphabets.index(i)+shift_amount)%26]
+  print(f'the cipher text is {cipher_text}')
+
+def decrypt(cipher_text, shift_amount):
+  normal_text=''
+  for i in cipher_text:
+    normal_text+= alphabets[(alphabets.index(i)-shift_amount)%26]
+  print(f'the decrypted text is {normal_text}')
+
+
+if c_or_d== 'encrypt':
+  encrypt(plain_text=text, shift_amount=shift)
+elif c_or_d=='decrypt':
+  decrypt(cipher_text=text, shift_amount=shift)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
