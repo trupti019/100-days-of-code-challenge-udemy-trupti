@@ -391,6 +391,23 @@ import random
 # elif c_or_d=='decrypt':
 #   decrypt(cipher_text=text, shift_amount=shift)
 
+# day 9- dictionaries
+
+# grading exercise
+
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+
+print(f'\n {student_scores}')
+
+student_grades={}
+
+
 
 
 
