@@ -226,106 +226,112 @@ import random
 
 # day 7- gang man
 
-word_list = [
-    "apple", "banana", "orange", "grape", "kiwi", "strawberry",
-    "watermelon", "pineapple", "blueberry", "raspberry", "peach",
-    "apricot", "pear", "cherry", "mango", "lemon", "lime",
-    "coconut", "papaya", "fig", "plum", "melon", "nectarine",
-    "cranberry", "blackberry", "dragonfruit", "guava", "lychee",
-    "passionfruit", "persimmon", "pomegranate", "tangerine", "mulberry"
-]
+# import random
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-______________
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-______________
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-______________
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-______________''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+# word_list = [
+#     "apple", "banana", "orange", "grape", "kiwi", "strawberry",
+#     "watermelon", "pineapple", "blueberry", "raspberry", "peach",
+#     "apricot", "pear", "cherry", "mango", "lemon", "lime",
+#     "coconut", "papaya", "fig", "plum", "melon", "nectarine",
+#     "cranberry", "blackberry", "dragonfruit", "guava", "lychee",
+#     "passionfruit", "persimmon", "pomegranate", "tangerine", "mulberry"
+# ]
 
-endgame=False                                #if end game is true the game is over
-fruit = random.choice(word_list)             #choose a random word from the list for the user to guess
-len=len(fruit)                               #number of characters in random fruit name
+# stages = ['''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#  / \  |
+#       |
+# ______________
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#  /    |
+#       |
+# ______________
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|\  |
+#       |
+#       |
+# ______________
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#  /|   |
+#       |
+#       |
+# ______________''', '''
+#   +---+
+#   |   |
+#   O   |
+#   |   |
+#       |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#   O   |
+#       |
+#       |
+#       |
+# =========
+# ''', '''
+#   +---+
+#   |   |
+#       |
+#       |
+#       |
+#       |
+# =========
+# ''']
 
-lives=6                                      #keep a track of lives left
-print(fruit)                                 #for testing the code
+# endgame = False
+# fruit = random.choice(word_list)
+# word_length = len(fruit)
+# lives = 6
+# print(fruit)
+# display = ['_' for _ in range(word_length)]
 
-display=[]                                  #create a empty list
-i=0                         
-while i<len:
-   display.append('_')                     #inserting a blank in the empth display list for every letter in random fruit
-   i+=1
+# while not endgame:
+#     guess = input("Enter a letter: ").lower()
+
+#     if len(guess) != 1 or not guess.isalpha():
+#         print("Please enter a single letter.")
+#         continue
     
-print(display)
+#     if guess in display:
+#         print(f'youvealr guess that letter {guess}')
+
+#     found = False
+#     for i in range(word_length):
+#         if guess == fruit[i]:
+#             display[i] = guess
+#             found = True
 
 
+#     if not found:
+#         print(f'{guess} is not there in the given word')
+#         lives -= 1
+#         if lives == 0:
+#             endgame = True
+#             print('You lose!')
 
-while not endgame:
-   guess=(input("enter a letter: ")).lower()
-   for i in range(0,len(fruit)):
-       if guess==fruit[i]:
-           display[i]=guess
-   if guess not in fruit:
-       lives-=1
-       if lives==0:
-          endgame=True
-          print('you lose lmaooooo')
-          
-           
-   print(f"{.join.display}")
+#     print(" ".join(display))
 
-   if '_' not in display:
-     endgame=True
-     print('you win!!! NIGGA')
+#     if '_' not in display:
+#         endgame = True
+#         print('You win!')
 
+#     print(stages[lives])
 
-print(stages[lives])
+# day 8 caesar cipher
+
