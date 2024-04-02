@@ -395,31 +395,136 @@ import random
 
 # grading exercise
 
-student_scores = {
-  "Harry": 81,
-  "Ron": 78,
-  "Hermione": 99, 
-  "Draco": 74,
-  "Neville": 62,
-}
+# student_scores = {
+#   "Harry": 81,
+#   "Ron": 78,
+#   "Hermione": 99, 
+#   "Draco": 74,
+#   "Neville": 62,
+# }
 
-print(f'\n {student_scores}')
+# print(f'\n {student_scores}')
 
-student_grades={}
+# student_grades={}
+
+# for i in student_scores:
+#     score=student_scores[i]
+#     if score>90:
+#         student_grades[i]='outstanding'
+#     elif score>80:
+#         student_grades[i]='Exceeds expectations'
+#     elif score>70:
+#       student_grades[i]='acceptable'
+#     else:
+#         student_grades[i]='fail'
+# print(student_grades)
 
 
+# interactive exercise:
+
+# travel_log = [
+#   {
+#     "country": "France",
+#     "visits": 12,
+#     "cities": ["Paris", "Lille", "Dijon"]
+#   },
+#   {
+#     "country": "Germany",
+#     "visits": 5,
+#     "cities": ["Berlin", "Hamburg", "Stuttgart"]
+#   },
+# ]
+
+# country=input('enter country: ')
+# visits=int(input('enter visits: '))
+# cities=(input('enter cities')).split(',')
 
 
+# def add_new(country,visits,cities):
+#     new_country={}
+#     new_country['country']=country
+#     new_country['visits']=visits
+#     new_country['cities']=cities
+#     travel_log.append(new_country)
+
+# add_new(country=country, visits=visits, cities=cities)
+# print(f"I've been to {travel_log[2]['country']} {travel_log[2]['visits']} times.")
+# print(f'my favourite city is {travel_log[2]['cities'][0]}')
 
 
+# secret auction
+import os
+# dict={}
+
+# def highest_bidder(dict):
+#     highest_bid=0
+#     winner=''
+#     for i in dict:
+#         bid_amount= dict[i]
+#         if bid_amount>highest_bid:
+#             highest_bid=bid_amount
+#             winner=i
+
+#     print(f'the winner is{winner}')
+
+# more_bidders=True
+# while(more_bidders==True):
+#     name=input('enter your name: ')
+#     bid_price=int(input('enter your bid price: '))
+#     dict[name]=bid_price
+#     bidders=input('are there any more bidders? --> ')
+#     if bidders=='no':
+#         more_bidders=False
+#         highest_bidder(dict=dict)
+
+#     elif bidders=='yes':
+#         os.system('cls')   
+
+# day 10- docstring and calculator
 
 
+# def add(n1, n2):
+#   return n1 + n2
 
+# def subtract(n1, n2):
+#   return n1 - n2
 
+# def multiply(n1, n2):
+#   return n1 * n2
 
+# def divide(n1, n2):
+#   return n1 / n2
 
+# operations = {
+#   "+": add,
+#   "-": subtract,
+#   "*": multiply,
+#   "/": divide
+# }
 
+# def calculator():
+  #   num1=float(input('ener first number: '))      #input of first number
+#   for i in operations:                          #printing the symbols
+#     print(f'{i}')
+#   cont=True                                     #initializing flag
 
+#   while cont==True:
+#     symbol=input('enter symbol: ')              
+#     num2=float(input('enter seconf number: '))
+#     func=operations[symbol]                          
+#     ans= func(num1, num2)
+#     print(f"{num1} {symbol} {num2} = {ans}")
+
+#     if input(f"Type 'y' to continue calculating with {ans}, or type 'n' to start a new calculation: ") == 'y':
+#       num1 = ans
+#     else:
+#       cont = False
+#       os.system('cls')
+#       calculator()
+
+# calculator()
+
+# day 11- the blackjack capstone project
 
 
 
