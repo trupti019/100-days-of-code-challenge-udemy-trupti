@@ -453,34 +453,34 @@ import random
 
 
 # secret auction
-import os
-# dict={}
+# import os
+# # dict={}
 
-# def highest_bidder(dict):
-#     highest_bid=0
-#     winner=''
-#     for i in dict:
-#         bid_amount= dict[i]
-#         if bid_amount>highest_bid:
-#             highest_bid=bid_amount
-#             winner=i
+# # def highest_bidder(dict):
+# #     highest_bid=0
+# #     winner=''
+# #     for i in dict:
+# #         bid_amount= dict[i]
+# #         if bid_amount>highest_bid:
+# #             highest_bid=bid_amount
+# #             winner=i
 
-#     print(f'the winner is{winner}')
+# #     print(f'the winner is{winner}')
 
-# more_bidders=True
-# while(more_bidders==True):
-#     name=input('enter your name: ')
-#     bid_price=int(input('enter your bid price: '))
-#     dict[name]=bid_price
-#     bidders=input('are there any more bidders? --> ')
-#     if bidders=='no':
-#         more_bidders=False
-#         highest_bidder(dict=dict)
+# # more_bidders=True
+# # while(more_bidders==True):
+# #     name=input('enter your name: ')
+# #     bid_price=int(input('enter your bid price: '))
+# #     dict[name]=bid_price
+# #     bidders=input('are there any more bidders? --> ')
+# #     if bidders=='no':
+# #         more_bidders=False
+# #         highest_bidder(dict=dict)
 
-#     elif bidders=='yes':
-#         os.system('cls')   
+# #     elif bidders=='yes':
+# #         os.system('cls')   
 
-# day 10- docstring and calculator
+# # day 10- docstring and calculator
 
 
 # def add(n1, n2):
@@ -503,7 +503,7 @@ import os
 # }
 
 # def calculator():
-  #   num1=float(input('ener first number: '))      #input of first number
+#     num1=float(input('ener first number: '))      #input of first number
 #   for i in operations:                          #printing the symbols
 #     print(f'{i}')
 #   cont=True                                     #initializing flag
@@ -525,11 +525,75 @@ import os
 # calculator()
 
 # day 11- the blackjack capstone project
+# import random
+
+# yorn=input(print('do u want to play the game type "y" or "n" : '))
+# if yorn=='y':
+
+#     def return_random_card():
+#         cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
+#         card=random.choice(cards)
+#         return card
+    
+#     def calculate_score(list):
+#         summ=0
+#         for i in list:
+#             summ+=i
+    
+#     user=list(random.sample(cards,2))
+#     computer=list(random.sample(cards,2))
+#     compsum=sum(computer)
+#     usersum=sum(user)
+
+
+# day 12 number guessing game
+
+print('''i AM THE THINKER
+      I AM THINKING ABOUT A NUMBER BETWEEN 1 AND 100''')
+
+import random
+comp=random.randint(0,101)
+print(comp)
+difficulty= input('choose a difficulty: easy or hard')
+if difficulty=='easy':
+    attempts=10
+
+if difficulty=='hard':
+    attempts=7
+
+guess=False
+
+
+while attempts!=0:
+    while guess==False:
+        print(f'you have{attempts} attempts left to guess the number')
+        user=input('make a guess')
+        
+        if user!=comp:
+            attempts-=1
+            if user>comp:
+                print('too high')
+            if user<comp:
+                print('too low')
+        elif user==comp:
+            guess=True
+            print('u have guess the right number')
 
 
 
+            
 
 
+
+    
+        
+        
+        
+        
+
+    
+
+    
 
 
 
