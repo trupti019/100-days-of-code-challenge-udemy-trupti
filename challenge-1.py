@@ -548,56 +548,99 @@ import random
 
 # day 12 number guessing game
 
-print('''i AM THE THINKER
-      I AM THINKING ABOUT A NUMBER BETWEEN 1 AND 100''')
+# print('''i AM THE THINKER
+#       I AM THINKING ABOUT A NUMBER BETWEEN 1 AND 100''')
 
-import random
-comp=random.randint(0,101)
-print(comp)
-difficulty= input('choose a difficulty: easy or hard')
-if difficulty=='easy':
-    attempts=10
+# import random
+# comp=random.randint(0,101)
+# # print(f'psssst the number is : {comp}')
 
-if difficulty=='hard':
-    attempts=7
+# def diff():
+#     difficulty= input('\n choose a difficulty: easy or hard: \n ')
+#     if difficulty=='easy':
+#         attempts=10
 
-guess=False
+#     elif difficulty=='hard':
+#         attempts=7
 
-
-while attempts!=0:
-    while guess==False:
-        print(f'you have{attempts} attempts left to guess the number')
-        user=input('make a guess')
-        
-        if user!=comp:
-            attempts-=1
-            if user>comp:
-                print('too high')
-            if user<comp:
-                print('too low')
-        elif user==comp:
-            guess=True
-            print('u have guess the right number')
-
-
-
-            
-
-
-
+#     else:
+#         print('Invalid choice, defaulting to easy.')
+#         attempts = 10
     
-        
-        
-        
-        
+#     return attempts
 
-    
-
-    
+# guess=False
+# attempts= diff()
 
 
+# def check(user, comp, attempts):
+#             global guess
+#             if user!=comp:
+#                 attempts-=1
+#                 if user>comp:
+#                     print('\n too high ')
+#                 if user<comp:
+#                     print('\n too low')
+#                 if attempts == 0:
+#                     print('You ran out of attempts.')
+#                     guess = True
+#             elif user==comp:
+#                 guess=True
+#                 print('\n u have guess the right number')
 
 
+# while attempts!=0 and guess==False:
+#         print(f'\n you have{attempts} attempts left to guess the number')
+#         user=int(input('\n make a guess: '))
+#         check(user, comp, attempts)
+
+
+# day 13 debugging
+
+# # Describe Problem
+# def my_function():
+#   for i in range(1, 21):
+#     if i == 20:
+#       print("You got it")
+# my_function()
+
+# # Reproduce the Bug
+# from random import randint
+# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+# dice_num = randint(1, 6)
+# print(dice_imgs[dice_num-1])
+
+# # Play Computer
+# year = int(input("What's your year of birth?"))
+# if year > 1980 and year <1994:
+#   print("You are a millenial.")
+# elif year >=1994:
+#   print("You are a Gen Z.")
+
+# # Fix the Errors
+# age = int(input("How old are you?"))
+# if age > 18:
+#     print(f"You can drive at age {age}.")
+
+# #Print is Your Friend
+# pages = 0
+# word_per_page = 0
+# pages = int(input("Number of pages: "))
+# word_per_page = int(input("Number of words per page: "))
+# total_words = pages * word_per_page
+# print(total_words)
+
+# #Use a Debugger
+# def mutate(a_list):
+#   b_list = []
+#   for item in a_list:
+#     new_item = item * 2
+#     b_list.append(new_item)
+#   print(b_list)
+
+# mutate([1,2,3,5,8,13])
+
+# Higher or lower
 
 
 
