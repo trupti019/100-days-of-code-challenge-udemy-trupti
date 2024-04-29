@@ -1,1 +1,1 @@
-print(fruit)
+while True:
